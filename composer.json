@@ -1,5 +1,5 @@
 {
-    "name": "cnect/webtools",
+    "name": "cnect_webtools/cnect_webtools",
     "description": "Corporate EC Webtools Services for Drupal 8",
     "type": "module",
     "require": {
