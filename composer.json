@@ -1,0 +1,9 @@
+{
+    "name": "cnect/webtools",
+    "description": "Corporate EC Webtools Services for Drupal 8",
+    "type": "module",
+    "require": {
+        "drupal/geocoder": "^2.1",
+        "drupal/geofield": "^1.1",
+    }
+}
