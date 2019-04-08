@@ -1,4 +1,4 @@
-# cnect_geocoder
+# Cnect Geocoder
 
 Project still under development.
 
