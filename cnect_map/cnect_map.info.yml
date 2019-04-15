@@ -1,0 +1,6 @@
+name: 'Cnect Map'
+type: module
+description: 'Allows to use Webtools Map Service within Drupal'
+core: 8.x
+package: 'Cnect Webtools'
+version: '8.x-1.x-dev'

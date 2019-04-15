@@ -1,0 +1,11 @@
+# Define the menu links for this module
+
+entity.cnect_map.collection:
+  title: 'Cnect Map'
+  route_name: entity.cnect_map.collection
+  description: 'List Maps'
+cnect_map.admin.structure.settings:
+  title: 'Cnect Map settings'
+  description: 'Configure Map entity'
+  route_name:  cnect_map.cnect_map_settings
+  parent: system.admin_structure

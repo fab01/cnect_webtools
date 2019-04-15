@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains cnect_map.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cnect_map_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cnect_map module.
+    case 'help.page.cnect_map':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Allows to use Webtools Map Service within Drupal') . '</p>';
+      return $output;
+
+    default:
+  }
+}

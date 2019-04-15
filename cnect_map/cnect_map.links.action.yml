@@ -1,0 +1,9 @@
+cnect_map.cnect_map_add:
+  # Which route will be called by the link
+  route_name: cnect_map.cnect_map_add
+  title: 'Add Map'
+
+  # Where will the link appear, defined by route name.
+  appears_on:
+    - entity.cnect_map.collection
+    - entity.cnect_map.canonical

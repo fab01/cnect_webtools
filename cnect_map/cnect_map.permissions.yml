@@ -1,0 +1,11 @@
+view cnect_map entity:
+  title: 'View Cnect Map entity'
+add cnect_map entity:
+  title: 'Add Cnect Map entity'
+edit cnect_map entity:
+  title: 'Edit Cnect Map entity'
+delete cnect_map entity:
+  title: 'Delete Cnect Map entity'
+administer cnect_map entity:
+  title: 'Administer Cnect Map entity'
+  restrict access: TRUE

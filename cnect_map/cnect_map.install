@@ -1,0 +1,22 @@
+<?php
+use Drupal\Core\Database;
+
+// Hook updates here
+
+/**
+ *
+ * Example of Hook Update to alter Table schema.
+ *
+ * Add column to the schema.
+
+function cnect_map_update_8001() {
+  $spec = array(
+    'type' => 'varchar',
+    'description' => "Settings",
+    'length' => 255,
+    'not null' => FALSE,
+  );
+  $schema = Database::getConnection()->schema();
+  $schema->addField('table_name', 'field_name', $spec);
+}
+ */

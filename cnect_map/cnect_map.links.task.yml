@@ -1,0 +1,20 @@
+cnect_map.settings_tab:
+  route_name: cnect_map.cnect_map_settings
+  title: Settings
+  base_route: cnect_map.cnect_map_settings
+
+cnect_map.view:
+  route_name: entity.cnect_map.canonical
+  base_route: entity.cnect_map.canonical
+  title: View
+
+cnect_map.page_edit:
+  route_name: entity.cnect_map.edit_form
+  base_route: entity.cnect_map.canonical
+  title: Edit
+
+cnect_map.delete_confirm:
+  route_name:  entity.cnect_map.delete_form
+  base_route:  entity.cnect_map.canonical
+  title: Delete
+  weight: 10

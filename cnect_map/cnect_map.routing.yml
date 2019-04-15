@@ -1,0 +1,54 @@
+entity.cnect_map.canonical:
+  path: '/cnect_map/{cnect_map}'
+  defaults:
+  # Calls the view controller, defined in the annotation of the contact entity
+    _entity_view: 'cnect_map'
+    _title: 'Cnect Map content'
+  requirements:
+  # Calls the access controller of the entity, $operation 'view'
+    _entity_access: 'cnect_map.view'
+
+entity.cnect_map.collection:
+  path: '/cnect_map/list'
+  defaults:
+  # Calls the list controller, defined in the annotation of the contact entity.
+    _entity_list: 'cnect_map'
+    _title: 'Cnect Map List'
+  requirements:
+  # Checks for permission directly.
+    _permission: 'administer cnect_map entity'
+
+cnect_map.cnect_map_add:
+  path: '/cnect_map/add'
+  defaults:
+  # Calls the form.add controller, defined in the contact entity.
+    _entity_form: cnect_map.default
+    _title: 'Add Cnect Map'
+  requirements:
+    _entity_create_access: 'cnect_map'
+
+entity.cnect_map.edit_form:
+  path: '/cnect_map/{cnect_map}/edit'
+  defaults:
+  # Calls the form.edit controller, defined in the contact entity.
+    _entity_form: cnect_map.default
+    _title: 'Edit Cnect Map'
+  requirements:
+    _entity_access: 'cnect_map.edit'
+
+entity.cnect_map.delete_form:
+  path: '/cnect_map/{cnect_map}/delete'
+  defaults:
+    # Calls the form.delete controller, defined in the contact entity.
+    _entity_form: cnect_map.delete
+    _title: 'Delete Cnect Map'
+  requirements:
+    _entity_access: 'cnect_map.delete'
+
+cnect_map.cnect_map_settings:
+  path: '/admin/structure/cnect_map_settings'
+  defaults:
+    _form: '\Drupal\cnect_map\Form\CnectMapSettingsForm'
+    _title: 'Cnect Map Settings'
+  requirements:
+    _permission: 'administer cnect_map entity'
