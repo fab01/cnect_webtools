@@ -1,0 +1,13 @@
+{# ** @file themes/custom/mytheme/templates/artwork.html.twig #}
+
+{% if content %}
+    <div>
+        <script type="application/json">
+            {
+                "service": "map",
+                "version": "2.0"
+            }
+        </script>
+        {{ content.settings }}
+    </div>
+{% endif %}

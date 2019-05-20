@@ -22,3 +22,29 @@ function cnect_map_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+/**
+ * Implements hook_theme().
+ */
+function cnect_map_theme($existing, $type, $theme, $path) {
+  return [
+    'cnect_map' => [
+      'render element' => 'elements',
+    ],
+  ];
+}
+
+/**
+ * implements hook_preprocess_HOOK()
+ */
+function template_preprocess_cnect_map(&$variables) {
+  $variables['#attached']['library'][] = 'cnect_map/smartloader';
+  $variables['content'] = [];
+  foreach (\Drupal\Core\Render\Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+  /** @var \Drupal\cnect_map\Entity\CnectMap $entity */
+  $entity = $variables['elements']['#cnect_map'];
+  $variables['label'] = $entity->label();
+  $variables['url'] = $entity->toUrl()->toString();
+}

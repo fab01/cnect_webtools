@@ -1,0 +1,3 @@
+smartloader:
+  js:
+    http://europa.eu/webtools/load.js: { type: external , attributes: { defer: true, async: true } }

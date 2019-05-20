@@ -1,7 +1,7 @@
 entity.cnect_map.canonical:
   path: '/cnect_map/{cnect_map}'
   defaults:
-  # Calls the view controller, defined in the annotation of the contact entity
+  # Calls the view controller, defined in the annotation of the map entity
     _entity_view: 'cnect_map'
     _title: 'Cnect Map content'
   requirements:
