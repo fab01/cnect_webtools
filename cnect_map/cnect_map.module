@@ -45,6 +45,7 @@ function template_preprocess_cnect_map(&$variables) {
   }
   /** @var \Drupal\cnect_map\Entity\CnectMap $entity */
   $entity = $variables['elements']['#cnect_map'];
-  $variables['label'] = $entity->label();
+  $variables['settings'] = $entity->settings->value;
+  //$variables['label'] = $entity->label();
   $variables['url'] = $entity->toUrl()->toString();
 }
