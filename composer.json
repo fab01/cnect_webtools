@@ -1,7 +1,7 @@
 {
     "name": "cnect_webtools/cnect_webtools",
     "description": "Corporate EC Webtools Services for Drupal 8",
-    "type": "module",
+    "type": "drupal-module",
     "license": "GPL-2.0-or-later",
     "require": {
         "drupal/geocoder": "^2.1",
