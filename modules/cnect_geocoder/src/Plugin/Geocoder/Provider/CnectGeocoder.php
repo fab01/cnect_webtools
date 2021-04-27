@@ -4,6 +4,7 @@ namespace Drupal\cnect_geocoder\Plugin\Geocoder\Provider;
 
 use Drupal\geocoder\ProviderBase;
 use function GuzzleHttp\uri_template;
+use Drupal\geocoder\ProviderUsingHandlerWithAdapterBase;
 
 /**
  * Provides a Ec Webtools Geogoder provider plugin.
@@ -11,10 +12,10 @@ use function GuzzleHttp\uri_template;
  * @GeocoderProvider(
  *   id = "CnectGeocoder",
  *   name = "CnectGeocoder",
- *   handler = "\Geocoder\Provider\CnectGeocoder"
+ *   handler = "\OpenEuropa\Provider\WebtoolsGeocoding\WebtoolsGeocoding"
  * )
  */
-class CnectGeocoder extends ProviderBase {
+class CnectGeocoder extends ProviderUsingHandlerWithAdapterBase {
 
   public function doGeocode($source) {
 

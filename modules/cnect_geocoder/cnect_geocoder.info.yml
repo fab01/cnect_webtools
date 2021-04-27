@@ -1,0 +1,9 @@
+name: Cnect Geocoder
+type: module
+description: 'Allows the usage of EC Webtools Corporate geocoding service.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+php: 7.1
+package: 'Webtools'
+dependencies:
+  - drupal:geocoder_address

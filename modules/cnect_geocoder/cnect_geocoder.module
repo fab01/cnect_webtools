@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains cnect_geocoder.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cnect_geocoder_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the webtools_geocoder module.
+    case 'help.page.cnect_geocoder':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('EC Webtools Geocoder Provider') . '</p>';
+      return $output;
+
+    default:
+  }
+}
